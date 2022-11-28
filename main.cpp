@@ -83,8 +83,9 @@ int main() {
     // Zodiac
     int zm = m;
     if (d > 20) {
-        zm = (zm + 1) % 12;
+        zm++;
     }
+    zm %= 12;
     printf("%02i.%02i is ", d, m);
     switch (zm) {
         case 0:
